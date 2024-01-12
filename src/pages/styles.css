@@ -1,0 +1,148 @@
+.container {
+    width: 100vw;
+    height: 95vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    
+  }
+  .container .header {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 40px;
+  }
+  .container .logoImg {
+    width: 100px;
+    height: 100px;
+  }
+  
+  .container .header span {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    padding-top: 15px;
+  }
+  
+  .container form {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .container   .inputContainer {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  
+  .container   .inputContainer label {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    margin-bottom: 8px;
+  }
+  
+  .container   .inputContainer input {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 16px;
+    width: 520px;
+    height: 49px;
+    border: 1px solid #5C73DB;
+    border-radius: 12px;
+    margin-bottom: 12px;
+  
+  }
+  
+  .container  a {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    color: #5C73DB;
+  }
+  
+  .container  .button {
+    width: 520px;
+    height: 48px;
+    background: #4763E4;
+    border-radius: 12px;
+    color: #fff;
+    border: none;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+  }
+  .container  .button:hover {
+    cursor: pointer;
+    opacity: 0.8;
+  }
+  
+  .container  .footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px
+  }
+  
+  .container  .footer p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #000000;
+  }
+  
+  .container  .footer a {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-decoration-line: underline;
+    color: #5C73DB;
+  }
+
+
+  @media (max-width: 600px) {
+
+    .container   .inputContainer input {
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+      padding: 16px;
+      width: 220px;
+      height: 29px;
+      border: 1px solid #5C73DB;
+      border-radius: 12px;
+      margin-bottom: 12px;
+    
+    }
+
+    .container  .button {
+      width: 220px;
+      height: 38px;
+      background: #4763E4;
+      border-radius: 12px;
+      color: #fff;
+      border: none;
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 22px;
+    
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 15px;
+    }
+  }
