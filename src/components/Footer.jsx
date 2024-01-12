@@ -9,8 +9,6 @@ function Footer() {
           display:'flex',
           alignItems: 'center',
           justifyContent:'center',
-          
-
       }}>
         © Thiago R. All rights reserved.
       </footer>
