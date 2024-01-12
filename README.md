@@ -11,7 +11,7 @@
 </br></br>
 
 <p align="center">
-   <img  src="src/assets/cadastre-se.png">  
+   <img  src="src/assets/registro.png">  
 </p>
 
 
@@ -20,12 +20,12 @@
 
 </br></br>
 
-<h1 align="center">Tela Home</h1>
+<h1 align="center">Tela de Recuperação de senha</h1>
 </br></br>
 
 
 <p align="center">
-   <img  src="src/assets/home.png">  
+   <img  src="src/assets/esqueceu.png">  
 </p>
 
 
