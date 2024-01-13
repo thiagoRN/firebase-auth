@@ -27,6 +27,15 @@
    <img  src="src/assets/esqueceu.png">  
 </p>
 
+</br></br>
+<h1 align="center">Tela Home</h1>
+</br></br>
+
+
+<p align="center">
+   <img  src="src/assets/home.png">  
+</p>
+
 
 <h2>Tecnologias</h2>
 <ul>
