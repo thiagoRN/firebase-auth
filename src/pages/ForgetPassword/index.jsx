@@ -5,6 +5,7 @@ import { auth } from '../../firebase/firebaseConfig';
 
 import logoImg from '../../assets/cadastre-se.png'
 import '../../pages/styles.css'
+import Button from '../../components/Button';
 
 function ForgetPassword() {
   const [email, setEmail] = useState("");
@@ -39,10 +40,7 @@ function ForgetPassword() {
           />
         </div>
 
-        <button className="button" onClick={()=> handleReset()}>
-          Enviar 
-        </button>
-      
+        <Button  handleClick={()=> handleReset()}>Enviar</Button>
     </div>
 
   )

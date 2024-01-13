@@ -5,6 +5,8 @@ import { useNavigate } from "react-router-dom";
 
 import logoImg from '../../assets/cadastre-se.png'
 import '../../pages/styles.css'
+import Button from '../../components/Button';
+
 
 
 function Login() {
@@ -66,18 +68,17 @@ function Login() {
           />
         </div>
 
-        <a href="#" onClick={handleReset}>Esqueceu sua senha ?</a>
+        <a  href="#" onClick={handleReset}>Esqueceu sua senha ?</a>
 
-        <button className="button" onClick={handleSignIn}>
-          Entrar 
-        </button>
+
+        <Button  handleClick={handleSignIn}>Entrar</Button>
+
         <div className="footer">
           <p>Ainda não possui uma conta?</p>
-          <Link to="/register">Registre-se</Link>
+          <Link to="/register" style={{fontWeight:500, textDecoration:'inherit', color: '#5C73DB'}}>Registre-se</Link>
         </div>
       </form>
     </div>
-
   )
 }
 

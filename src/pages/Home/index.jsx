@@ -7,6 +7,8 @@ import {   collection, onSnapshot } from "firebase/firestore";
 import { db } from "../../firebase/firebaseConfig";
 
 import '../../pages/styles.css'
+import Button from "../../components/Button";
+import Footer from "../../components/Footer";
 
 function Home() {
   const navigate = useNavigate();
@@ -18,7 +20,12 @@ function Home() {
     const storage = onSnapshot(collectionRef, (querySnapshot) => {
       querySnapshot.forEach((doc) => {
         // eslint-disable-next-line no-cond-assign
-        if(doc.data().email = auth.currentUser.email) setStorageData(doc.data().displayName); 
+
+        let docEmail = doc.data().email.toLowerCase();
+        let authEmail = auth.currentUser.email.toLowerCase();
+        
+        (docEmail == authEmail ? setStorageData(doc.data().displayName) : 'user')
+         
       });
     });
     return () => {
@@ -33,35 +40,40 @@ function Home() {
     })
 }
   return (
-    <>
+    <div style={{display:'flex', flexFlow:'column', height:'100vh'}}>
     <nav style={{
         height: 38,
-        
         backgroundColor:'#4763E4',
         display: 'flex',
         alignItems: 'center',
         justifyContent:'end',
     }}>
-    <button style={{
-              width: 90,
-              height: 30,
-              display: 'flex',
-              backgroundColor:'white',
-              color: '#4763E4',
-              alignItems: 'center',
-              justifyContent:'center',
-              margin:20,
-              }} 
-                onClick={handleClick}>
-              Deslogar
-        </button>
+    <Button  
+    width={90} 
+    height={30}
+    color={'#4763E4'}
+    backgroundColor={'white'}
+    margin={20}
+    handleClick={handleClick}
+    >
+      Deslogar
+    </Button>
+
     </nav>
-     <div className="container">
+     <div style={{
+      display:'flex', 
+      textAlign:'center',
+      alignItems:'center', 
+      justifyContent:'center',
+      height:'100%',
+      flexGrow:0,
+    }}>
     
             <h1>Bem vindo, {storageData}!!</h1>
             
     </div>
-    </>
+    <Footer />
+    </div>
   )
 }
 

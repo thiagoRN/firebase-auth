@@ -1,17 +1,25 @@
+body {
+  margin: 0;
+  padding: 0; 
+}
+
+
 .container {
     width: 100vw;
-    height: 95vh;
+    height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     
   }
+  
   .container .header {
     display: flex;
     align-items: center;
     flex-direction: column;
     margin-bottom: 40px;
+    text-align: center;
   }
   .container .logoImg {
     width: 100px;
@@ -38,55 +46,44 @@
   }
   
   .container   .inputContainer label {
-    font-weight: 400;
-    font-size: 16px;
+    font-weight: 500;
+    font-size: 18px;
     line-height: 19px;
-    margin-bottom: 8px;
+    margin-bottom: 5px;
   }
   
   .container   .inputContainer input {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
-    padding: 16px;
-    width: 520px;
-    height: 30px;
-    border: 1px solid #5C73DB;
+    width: 500px;
+    height: 35px;
+    border: 1px solid #4763E4;
     border-radius: 12px;
     margin-bottom: 12px;
-  
+    padding: 8px;
   }
   
-  .container  a {
-    font-weight: 400;
-    font-size: 16px;
+   a {
     line-height: 19px;
     padding-top: 16px;
     padding-bottom: 16px;
+    font-weight: 500;
+    font-size: 16px;
     color: #5C73DB;
+    text-decoration: inherit;
   }
   
-  .container  .button {
-    width: 520px;
-    height: 48px;
-    background: #4763E4;
-    border-radius: 12px;
-    color: #fff;
-    border: none;
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 22px;
-  
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 15px;
-  }
-  .container  .button:hover {
+  a:hover {
     cursor: pointer;
     opacity: 0.8;
+  }
+  
+ 
+    button:hover {
+    cursor: pointer;
+    opacity: 0.8;
+    
   }
   
   .container  .footer {
@@ -119,30 +116,29 @@
       flex-direction: row;
       align-items: flex-start;
       padding: 16px;
-      width: 220px;
-      height: 29px;
+      width: 350px;
+      height: 20px;
       border: 1px solid #5C73DB;
       border-radius: 12px;
       margin-bottom: 12px;
     
     }
 
-    .container  .button {
-      width: 220px;
-      height: 38px;
-      background: #4763E4;
-      border-radius: 12px;
-      color: #fff;
-      border: none;
-      font-family: 'Inter';
-      font-style: normal;
-      font-weight: 400;
-      font-size: 18px;
-      line-height: 22px;
-    
+  }
+
+  @media (max-width: 380px) {
+
+    .container   .inputContainer input {
       display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 15px;
+      flex-direction: row;
+      align-items: flex-start;
+      padding: 16px;
+      width: 270px;
+      height: 18px;
+      border: 1px solid #5C73DB;
+      border-radius: 12px;
+      margin-bottom: 12px;
+    
     }
+
   }

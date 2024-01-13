@@ -9,6 +9,7 @@ import { useNavigate } from "react-router-dom";
 
 import logoImg from '../../assets/cadastre-se.png'
 import '../../pages/styles.css'
+import Button from "../../components/Button";
 
 function Register() {
   const [email, setEmail] = useState("");
@@ -111,14 +112,14 @@ function Register() {
         />
       </div>
 
-      <button onClick={handleSignUp} className="button">
-        Cadastrar 
-      </button>
+      <Button  handleClick={handleSignUp}>Cadastrar</Button>
+      
       <div className="footer">
         <p>Você já tem uma conta?</p>
-        <Link to="/">Acesse sua conta aqui</Link>
+        <Link to="/" style={{fontWeight:500, textDecoration:'inherit', color: '#5C73DB'}}>Acesse sua conta aqui</Link>
       </div>
     </form>
+    
   </div>
   )
 }

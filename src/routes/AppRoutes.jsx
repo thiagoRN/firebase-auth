@@ -4,6 +4,7 @@ import Register from '../pages/Register'
 import Home from '../pages/Home'
 import ForgetPassword from '../pages/ForgetPassword'
 
+
 export function AppRoutes (){
     return (
         <BrowserRouter>
